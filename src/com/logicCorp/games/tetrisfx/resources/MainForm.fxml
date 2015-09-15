@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" minHeight="421.0" onKeyPressed="#HandleKeyAction" prefHeight="421.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <ImageView fitHeight="421.0" fitWidth="338.0" pickOnBounds="true" smooth="false">
+      <image>
+        <Image url="@main.jpg" />
+      </image>
+    </ImageView>
+    <Pane id="Boardpanel" fx:id="boardPanel" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="198.0">
+      <children>
+        <Label layoutX="211.0" layoutY="349.0" text="F2   : new game" textFill="WHITE">
+          <font>
+            <Font name="System Bold" size="14.0" fx:id="x2" />
+          </font>
+        </Label>
+        <Label font="$x2" layoutX="211.0" layoutY="368.0" text="ctrl : pause" textFill="WHITE" />
+      </children>
+      <effect>
+        <DropShadow blurType="GAUSSIAN" height="55.27827380952381" radius="27.17075892857143" width="55.404761904761905" />
+      </effect>
+    </Pane>
+    <Pane fx:id="scorePanel" layoutX="220.0" layoutY="10.0" prefHeight="57.0" prefWidth="111.0">
+         <children>
+            <Label fx:id="hiScoreLabel" layoutX="14.0" layoutY="6.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentScoreLabel" layoutX="14.0" layoutY="29.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children></Pane>
+    <Rectangle arcHeight="34.0" arcWidth="31.0" fill="DODGERBLUE" height="86.0" layoutX="217.0" layoutY="147.0" opacity="0.59" stroke="#8f00ff" strokeType="INSIDE" strokeWidth="3.2" width="114.0">
+      <effect>
+        <DropShadow color="#cc0000" radius="26.063988095238088" width="53.38095238095237" />
+      </effect>
+    </Rectangle>
+    <Pane id="nextBoard" fx:id="nextPanel" layoutX="236.0" layoutY="155.0" prefHeight="71.0" prefWidth="80.0">
+      <effect>
+        <DropShadow />
+      </effect>
+    </Pane>
+    <Label layoutX="221.0" layoutY="105.0" text="Level">
+      <font>
+        <Font name="System Bold" size="18.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label fx:id="levelLabel" font="$x1" layoutX="281.0" layoutY="105.0" textFill="WHITE" />
+    <ImageView fx:id="pausedImage" fitHeight="24.0" fitWidth="100.0" layoutX="221.0" layoutY="247.0" pickOnBounds="true" visible="false">
+      <image>
+        <Image url="@pause.png" />
+      </image>
+    </ImageView>
+  </children>
+</AnchorPane>

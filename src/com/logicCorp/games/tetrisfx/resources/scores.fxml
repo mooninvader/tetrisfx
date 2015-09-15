@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="form2" minHeight="421.0" prefHeight="321.0" prefWidth="338.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.logicCorp.games.tetrisfx.ScoresController">
+  <children>
+    <TableView fx:id="scoresTable" layoutX="4.0" layoutY="43.0" opacity="0.63" prefHeight="297.0" prefWidth="330.0">
+      <columns>
+        <TableColumn fx:id="name" prefWidth="90.0" sortable="false" text="name" />
+        <TableColumn fx:id="score" prefWidth="90.0" sortable="false" text="score" />
+        <TableColumn fx:id="level" prefWidth="50.0" resizable="false" sortable="false" text="level" />
+      </columns>
+      <effect>
+        <DropShadow height="51.34528459821429" radius="25.17560686383929" width="51.35714285714286" />
+      </effect>
+    </TableView>
+    <Pane fx:id="namePane" layoutX="4.0" layoutY="258.0" prefHeight="57.000099999997474" prefWidth="290.0" />
+  <TextField id="gamerName" layoutX="14.0" layoutY="374.0" opacity="0.57" prefHeight="33.0" prefWidth="136.0" fx:id="x1" />
+  <Button id="saveBtn" defaultButton="true" layoutX="152.0" layoutY="371.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="64.0" text="ok" />
+  <Button id="cancelBtn" cancelButton="true" layoutX="216.0" layoutY="371.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="110.0" text="cancel" />
+  <Label labelFor="$x1" layoutX="14.0" layoutY="350.0" text="enter your name" textFill="#c31a1a" textOverrun="CLIP" />
+      <Label layoutX="119.0" layoutY="14.0" text="HALL OF FAME" />
+  </children>
+</AnchorPane>
